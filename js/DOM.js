@@ -1,6 +1,6 @@
-export const createCard = (pokemon) => {
-  const pokemonContainer = document.querySelector(".card-container");
+const pokemonContainer = document.querySelector(".card-container");
 
+export const createCard = (pokemon) => {
   const cardElement = document.createElement("li");
   let { name, id, types, imageUrl, rarity, set } = pokemon;
   cardElement.innerHTML = `
@@ -19,3 +19,6 @@ export const createCard = (pokemon) => {
     `;
   pokemonContainer.appendChild(cardElement);
 };
+
+
+
